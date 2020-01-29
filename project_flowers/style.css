@@ -1,0 +1,79 @@
+body {
+    padding: 0;
+    margin: 0;
+    width: 100vw; /*100% width of the screen*/
+    height: 100vh; /*100% height of the screen*/
+    font-family: Arial;
+    background: rgb(141, 160, 172);
+    overflow: hidden; /* ??????????????????/*/
+}
+
+
+
+.flower {
+    width: 100px;
+    height: 80px;
+    background-image: url("images/rose2.png");
+    position: absolute;
+    background-size: cover; 
+    bottom: 100vh; /*float from botton to top, element behind screen, shift down element by 100%*/
+    background-position: center;
+    background-repeat: no-repeat; /*???*/
+       
+}
+
+.end-game-window {
+    /* background: black;
+    opacity: 0.5;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10; */
+    position: relative;
+    background: rgb(166, 153, 175);
+    /* display: flex; */
+    display: none;
+    justify-content: center;
+    align-content: center;
+    border-radius: 15px;
+    padding: 10px 100px 40px;
+    box-sizing: border-box;
+    width: 500px;
+    height: 500px;
+    left: calc(50% - 250px);
+    top: calc(50% - 250px);
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0,0,0,0.8);
+}       
+/* }
+.img-win {
+
+    
+} */
+
+.end-game-lose {
+    display: block;
+    /* display: none; */
+} 
+
+.end-game-win {
+    display: block;
+    /* display: none; */
+}
+
+.score {
+    background: lightgrey;
+    width: 300px;
+    height: 100px;
+    display: flex;
+    justify-content: center; /*axis x*/
+    align-items: center; /*axis y*/
+    border-radius: 0px 0px 10px 10px;
+    left: calc(50% - 150px) ; /*- half width (300px/2)*/
+    position: absolute;
+    top: 0
+}
+
+
